@@ -1,0 +1,9 @@
+<p>Book was successfully created.</p>
+
+<% @bookers.each do |booker| %>
+  <p>Title
+  	<%= link_to booker.title, booker_path(booker.id) %>
+  </p>
+  <p>
+  	<%= link_to booker.body, booker_path(booker.id) %>
+  </p>
